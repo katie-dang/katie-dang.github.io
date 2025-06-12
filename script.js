@@ -30,3 +30,5 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+console.log("Version 0.0")
