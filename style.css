@@ -6,7 +6,9 @@ body {
   color: #333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
@@ -98,6 +100,7 @@ img {
 
 /* HERO SECTION */
 .hero-section {
+  min-height: calc(100vh - 61px);
   position: relative;
   width: 100%;
   height: 100vh;
@@ -106,7 +109,8 @@ img {
 
 .hero-section img {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -146,9 +150,14 @@ img {
 
 /* PORTFOLIO INTRO */
 .portfolio-intro {
+  min-height: calc(100vh - 61px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f9f1e7;
   text-align: center;
-  padding: 60px 20px;
+  padding: 20px;
 }
 
 .portfolio-intro img {
@@ -176,10 +185,12 @@ img {
 
 /* EDUCATION SECTION */
 .education {
+  min-height: calc(100vh - 61px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 60px 20px;
+  justify-content: center;
+  padding: 20px;
   background-color: #fff;
 }
 
@@ -216,16 +227,29 @@ img {
 
 /* CAREER SECTION */
 .career {
+  min-height: calc(100vh - 61px);
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: center;
-  padding: 60px 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  /* added padding top & bottom */
   background-color: #fff;
 }
 
 .career-img {
   flex: 1;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.career-img img {
+  max-height: 80%;
+  /* prevents overflow */
+  width: auto;
+  object-fit: contain;
 }
 
 .career-text {
@@ -254,41 +278,51 @@ img {
   color: #000;
 }
 
+
 /* JOB TITLE SECTION */
 .job-title {
+  min-height: calc(100vh - 61px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #f9f1e7;
-  padding: 60px 20px;
+  padding: 20px;
   text-align: center;
 }
 
 .job-title h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 32px;
+  font-weight: 600;
+  /* Semi-bold */
+  font-size: 33px;
   font-style: italic;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .job-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  padding: 20px 0;
 }
 
 .job-card {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  height: 400px; /* fixed height for consistent layout */
-  width: 400px; /* fixed height for consistent layout */
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 0;
+  /* no rounded edges */
 }
 
 .job-card img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* this is the magic: auto crops + fills perfectly */
+  object-fit: cover;
   filter: brightness(0.5);
 }
 
@@ -313,21 +347,24 @@ img {
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  text-align: center;
 }
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-text .meet-me {
-      font-size: 32px;
-      padding-right: 20px;
+    font-size: 32px;
+    padding-right: 20px;
   }
 
   .portfolio-intro h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
-  .career, .education {
-      flex-direction: column;
+  .career,
+  .education {
+    flex-direction: column;
   }
 }
 
@@ -341,7 +378,8 @@ img {
 
 .footer h3 {
   text-transform: uppercase;
-  color: #c5862b; /* orange color like your image */
+  color: #c5862b;
+  /* orange color like your image */
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -432,12 +470,12 @@ img {
 /* Responsive */
 @media (max-width: 768px) {
   .footer-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-links {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
