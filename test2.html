@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Full Screen GIF Section</title>
+
+    <!-- Load Inter and Halant fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #000;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-container .name {
+            font-family: 'Halant', serif;
+            font-size: 26px;
+            font-weight: 400;
+            color: #000;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: #000;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: #19333C;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 16px;
+            height: 16px;
+        }
+
+        /* FULLSCREEN GIF SECTION */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: calc(100vh - 61px); /* subtract navbar height */
+            overflow: hidden;
+        }
+
+        .hero-section video,
+        .hero-section img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-text h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin: 0;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .hero-text .meet-me {
+            font-family: 'Playfair Display', serif;
+            font-size: 90px;
+            font-weight: 700;
+            font-style: italic;
+            margin-top: 40px;
+            align-self: flex-end;
+            padding-right: 50px;
+            color: #fff;
+        }
+
+        /* Optional responsiveness */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 16px;
+            }
+
+            .hero-text .meet-me {
+                font-size: 32px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+            <div class="name">KATIE DANG</div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="social-icons">
+            <a href="mailto:your@email.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
+            </a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+    </nav>
+
+    <!-- FULLSCREEN GIF SECTION -->
+    <section class="hero-section">
+        <!-- You can use <video> or <img> depending on your GIF -->
+        <img src="main-page.gif" alt="Background GIF" loop autoplay muted playsinline>
+
+        <div class="hero-text">
+            <h1>FIND A PARTNER FOR YOUR BUSINESS?</h1>
+            <div class="meet-me">Meet me!</div>
+        </div>
+    </section>
+
+</body>
+</html>
