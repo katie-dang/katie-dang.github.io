@@ -58,6 +58,7 @@ img {
   display: flex;
   margin: 0;
   padding: 0;
+  transform: translateX(-70px);
 }
 
 .nav-links li {
