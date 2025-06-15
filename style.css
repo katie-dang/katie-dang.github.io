@@ -173,24 +173,39 @@ img {
 
 .portfolio-intro img {
   margin: 0 auto 20px;
-  max-width: 500px;
+  max-width: 800px;
 }
 
+/* Welcome Text */
 .portfolio-intro h2 {
-  letter-spacing: 2px;
-  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
   color: #555;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
+/* Hello! I'm Katie Dang */
 .portfolio-intro h1 {
-  font-size: 32px;
-  margin: 10px 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  margin: 0 0 30px 0; /* reduced spacing */
+  line-height: 1.2;
 }
 
+/* I'm a business... */
 .portfolio-intro p {
   max-width: 700px;
   margin: 0 auto;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.02em;
   color: #333;
 }
 

@@ -13,9 +13,8 @@ window.addEventListener("scroll", () => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            if (window.scrollY < document.getElementById('about').offsetTop) {
-                // If before Education → highlight Home
-                current = "home";
+            if (window.scrollY < document.getElementById('career').offsetTop && window.scrollY > document.getElementById('about').offsetTop) {
+                current = "about";
             } else if (window.scrollY >= sectionTop - sectionHeight / 3) {
                 current = section.getAttribute("id");
             }
