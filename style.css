@@ -211,12 +211,14 @@ img {
 
 /* EDUCATION SECTION */
 .education {
-  min-height: calc(100vh - 61px);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  padding-right: 0px;
+  padding-left: 60px;
   background-color: #fff;
 }
 
@@ -226,29 +228,48 @@ img {
 }
 
 .education-text h2 {
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;            /* Semibold */
+  letter-spacing: 0.16em;      /* 16% letter spacing */
+  text-transform: uppercase;   /* optional if all caps in Figma */
+  margin: 0 0 10px 0;          /* optional spacing */
+  padding-bottom: 20px;
 }
 
 .education-text p {
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;           /* default weight */
+  line-height: 30px;
+  letter-spacing: 0;          /* or omit if default */
+  margin: 0 0 20px 0;         /* optional spacing */
+}
+
+.education-text strong {
+  font-weight: 600;
 }
 
 .education-text .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: 1px solid #000;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 14px;
   font-weight: 500;
   color: #000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;         /* Regular */
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.02em;   /* 2% */
 }
 
 .education-img {
   flex: 1;
   padding: 20px;
+  padding-right: 0;
 }
 
 /* CAREER SECTION */
@@ -259,16 +280,16 @@ img {
   align-items: center;
   justify-content: center;
   padding: 40px 20px;
+  padding-left: 0px;
   /* added padding top & bottom */
   background-color: #fff;
 }
 
 .career-img {
   flex: 1;
-  padding: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* align image to the left */
+  align-items: center;     /* optional: top-align */
   height: 60vw;
 }
 
@@ -285,24 +306,38 @@ img {
 }
 
 .career-text h2 {
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;            /* Semibold */
+  letter-spacing: 0.16em;      /* 16% letter spacing */
+  text-transform: uppercase;   /* optional if all caps in Figma */
+  margin: 0 0 10px 0;          /* optional spacing */
+  padding-bottom: 20px;
 }
 
 .career-text p {
-  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 400;           /* default weight */
+  line-height: 30px;
+  letter-spacing: 0;          /* or omit if default */
+  margin: 0 0 20px 0;         /* optional spacing */
 }
 
 .career-text .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: 1px solid #000;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 14px;
   font-weight: 500;
   color: #000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;         /* Regular */
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.02em;   /* 2% */
 }
 
 
