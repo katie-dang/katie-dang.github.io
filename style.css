@@ -244,6 +244,7 @@ img {
   line-height: 30px;
   letter-spacing: 0;          /* or omit if default */
   margin: 0 0 20px 0;         /* optional spacing */
+  max-width: 600px;
 }
 
 .education-text strong {
@@ -279,7 +280,7 @@ img {
   flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 40px 10px;
   padding-left: 0px;
   /* added padding top & bottom */
   background-color: #fff;
@@ -303,6 +304,7 @@ img {
 .career-text {
   flex: 1;
   padding: 20px;
+  padding-left: 0px;
 }
 
 .career-text h2 {
@@ -317,9 +319,20 @@ img {
 
 .career-text p {
   font-family: 'Inter', sans-serif;
+  max-width: 700px;
   font-size: 20px;
   font-weight: 400;           /* default weight */
   line-height: 30px;
+  letter-spacing: 0;          /* or omit if default */
+  margin: 0 0 20px 0;         /* optional spacing */
+}
+
+.career-text li {
+  font-family: 'Inter', sans-serif;
+  max-width: 800%;
+  font-size: 20px;
+  font-weight: 400;           /* default weight */
+  line-height: 10px;
   letter-spacing: 0;          /* or omit if default */
   margin: 0 0 20px 0;         /* optional spacing */
 }
